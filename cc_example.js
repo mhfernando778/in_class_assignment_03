@@ -1,15 +1,15 @@
 // Task 5 //
-// let orders = [
-//     {id: 101, customer: "Alice", total: 300},
-//     {id: 102, customer: "Bob", total: 450},
-//     {id: 102, customer: "Charlie", total: 200}
-// ];
+let orders = [
+    {id: 101, customer: "Alice", total: 300},
+    {id: 102, customer: "Bob", total: 450},
+    {id: 103, customer: "Charlie", total: 200}
+];
 
-// function findOrder(orders, orderId) {
-//     return orders.find( order => order.id === orderId);
-// };
+function findOrder(orders, orderId) {
+    return orders.find( order => order.id === orderId);
+}
 
-// console.log(findOrder(orders, 102));
+console.log(findOrder(orders, 102));
 
 
 // Task 6 //
@@ -56,11 +56,17 @@
 
 // Task 8 //
 
-let orders1 = [{ id: 1, customer: "Alice" }, { id: 2, customer: "Bob"}];
-let orders2 = [{ id: 3, customer: "Charlie" }, { id: 4, customer: "David"}];
+// let orders1 = [{ id: 1, customer: "Alice" }, { id: 2, customer: "Bob"}];
+// let orders2 = [{ id: 3, customer: "Charlie" }, { id: 4, customer: "David"}];
 
-function mergeOrders(orderA, orderB) {
-    return [...orderA, ...orderB];
-}
+// function mergeOrders(orderA, orderB) {
+//     return [...orderA, ...orderB];
+// }
 
-console.log(mergeOrders(orders1, orders2));
+// console.log(mergeOrders(orders1, orders2));
+
+
+// Extra //
+let employee = {name: "Alice", position: "Developer", salary: 70000}
+
+console.log(`${employee.name} is a ${employee.position} and makes $${employee.salary}`);
